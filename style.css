@@ -1,0 +1,203 @@
+/* COMMON */
+
+.mt-2 {
+    margin-top: 32px !important;
+}
+
+.br-2 {
+    border-radius: 16px !important;
+}
+
+/* BODY BLOCK */
+
+.wrapper--main {
+    min-width: 320px;
+    max-width: 1200px;
+    margin: 32px auto;
+}
+
+.wrapper--side-padding {
+    padding: 0 8px;
+}
+
+/* TITLES */
+
+.block--title {
+    font-size: 1rem;
+}
+
+.block--subtitle {
+    font-size: 0.8125rem;
+    color: #7c7c7c;
+}
+
+.title--centered {
+    text-align: center;
+}
+
+/* CARDS */
+
+.card__wrapper {
+    padding: 16px;
+    border: 1px solid #ddd;
+    border-radius: 16px;
+}
+
+.section__block {
+    margin-top: 16px;
+}
+
+.card__wrapper--select {
+    background-color: aliceblue;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+/* MAIN BLOCK */
+
+.introduction__block--image {
+    width: 100%;
+    height: 400px;
+    background-image: url('/assets/pc.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center 0;
+}
+
+/* ACCORDION */
+
+.details__title {
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    font-weight: bold;
+}
+
+.details__content {
+    margin-top: 16px;
+}
+
+/* TABLE */
+
+.table {
+    & table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    & thead tr {
+        border-bottom: 1px solid #ddd;
+    }
+
+    & tbody tr:not(:last-child) {
+        border-bottom: 1px solid #ddd;
+    }
+
+    & th, td {
+        word-break: break-word;
+        text-align: left;
+        font-size: 0.8125rem;
+        height: 40px;
+    }
+
+    & th:first-child, td:first-child {
+        width: 50%;
+    }
+
+    & th:not(:first-child), td:not(:first-child) {
+        width: 25%;
+    }
+}
+
+.receipts__list {
+    & .receipts__list__item:not(:first-child) {
+        margin-top: 16px;
+    }
+}
+
+.receipts__list__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & a {
+        font-size: 0.8125rem;
+    }
+}
+
+.receipt__title {
+    font-size: 0.8125rem;
+}
+
+/* HR LINE */
+
+.break__line {
+    margin: 32px 0;
+}
+
+/* GUIDE INSTALL */
+
+.guide__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.guide__step {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex: 0 0 calc(50% - 8px);
+    box-sizing: border-box;
+    position: relative;
+}
+
+@media (max-width: 992px) {
+    .guide__step {
+        flex: 0 0 100%;
+    }
+}
+
+.guide__step__image-wrapper {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 16px;
+    overflow: hidden;
+
+    & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+.guide__step__counter {
+    position: absolute;
+    top: 32px;
+    left: 32px;
+    color: #000;
+    font-size: 2rem;
+
+    width: 4rem;
+    height: 4rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.faq__block {
+    display: flex;
+    flex-direction: column;
+
+    & a {
+        margin-top: 16px;
+    }
+}
+
+.card__wrapper--select ul li {
+    padding: 8px 0;
+}
